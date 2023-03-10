@@ -1,3 +1,10 @@
+/* Posted solution uses flex-shrink: 0 
+on icon, but I didn't do that here. 
+Another difference is that they simply
+nested the 'x' button within header
+instead of putting both in a new
+container. Otherwise very similar. */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html, body {
@@ -20,6 +27,24 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.header {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.text {
+  margin-bottom: 16px;
 }
 
 .icon {
